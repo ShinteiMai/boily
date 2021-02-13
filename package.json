@@ -1,0 +1,35 @@
+{
+  "name": "boily",
+  "version": "1.0.0",
+  "description": "work in progress lol",
+  "main": "index.js",
+  "private": "false",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinteiMai/boily.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShinteiMai/boily/issues"
+  },
+  "homepage": "https://github.com/ShinteiMai/boily#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^5.0.9",
+    "pinst": "^2.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
